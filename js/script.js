@@ -1,4 +1,5 @@
 // Pages
+
 document.querySelectorAll('.logo').forEach(logo => {
  logo.addEventListener('click', () => {
      document.querySelector('.front-page').style.display = 'block'
@@ -12,6 +13,16 @@ document.querySelectorAll('.signup').forEach(signupBtn => {
      document.querySelector('.signup-page').style.display = 'flex'
  })
 })
+
+
+document.querySelectorAll('.login').forEach(loginBtn => {
+    loginBtn.addEventListener('click', () => {
+        document.querySelector('.front-page').style.display = 'none'
+        document.querySelector('.login-page').style.display = 'block'
+        document.querySelector('.signup-page').style.display = 'none'
+    })
+})
+
 // End of Pages
 
 // Navigation
